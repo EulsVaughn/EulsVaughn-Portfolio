@@ -40,6 +40,30 @@ footer .social a {
 footer .social a:hover {
     color: #00adb5;
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.slide-in-text {
+    animation: slide-in 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
         </style>
     </head>
     <body class="d-flex flex-column h-100">
@@ -61,24 +85,25 @@ footer .social a:hover {
             </nav>
             <!-- Header-->
             <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                    
-                               
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Hey There! Im Von Kaiser Astudillo</span></h1>
-                                <div class="fs-3 fw-light text-muted">I'm an Information Systems professional with a focus on developing and improving business processes. I create innovative solutions that enhance system functionality and provide user-friendly experiences.</div>
-                                <br>
-                                <br>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-7">
+         <div class="container px-5 pb-5">
+    <div class="row gx-5 align-items-center">
+        <div class="col-xxl-5">
+            <!-- Header text content-->
+            <div class="text-center text-xxl-start">
+                <h1 class="display-3 fw-bolder mb-5 slide-in-text">
+                    <span class="text-gradient d-inline">Hey There! I'm Von Kaiser Astudillo</span>
+                </h1>
+                <div class="fs-3 fw-light text-muted">
+                    I'm an Information Systems professional with a focus on developing and improving business processes. I create innovative solutions that enhance system functionality and provide user-friendly experiences.
+                </div>
+                <br><br>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-7">
                             <!-- Header profile picture-->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
                                 <div class="profile bg-gradient-primary-to-secondary">
