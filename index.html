@@ -40,6 +40,21 @@ footer .social a {
 footer .social a:hover {
     color: #00adb5;
 }
+     @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Apply the animation */
+        .slide-in {
+            animation: slideInFromLeft 1s ease-out;
+        }
         </style>
     </head>
     <body class="d-flex flex-column h-100">
@@ -68,8 +83,8 @@ footer .social a:hover {
                             <div class="text-center text-xxl-start">
                     
                                
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Hey There! Im Von Kaiser Astudillo</span></h1>
-                                <div class="fs-3 fw-light text-muted">I'm an Information Systems professional with a focus on developing and improving business processes. I create innovative solutions that enhance system functionality and provide user-friendly experiences.</div>
+                                    <h1 class="display-3 fw-bolder mb-5 slide-in"><span class="text-gradient d-inline">Hey There! Im Von Kaiser Astudillo</span></h1>
+                                 <div class="fs-3 fw-light text-muted slide-in">I'm an Information Systems professional with a focus on developing and improving business processes. I create innovative solutions that enhance system functionality and provide user-friendly experiences.</div>
                                 <br>
                                 <br>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
