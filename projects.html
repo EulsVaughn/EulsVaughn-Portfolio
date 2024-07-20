@@ -40,13 +40,15 @@ footer .social a {
 footer .social a:hover {
     color: #00adb5;
 }
-        .img-button {
+          .img-button {
             position: relative;
             display: inline-block; /* Prevents image stretching */
+            max-width: 100%; /* Ensure the image does not exceed its container width */
+            height: auto; /* Maintain the aspect ratio */
         }
-        .img-button img {
-            width: 300px; /* Set to your desired width */
-            height: 400px; /* Set to your desired height */
+      .img-button img {
+            width: 100%; /* Make the image width 100% of its container */
+            height: auto; /* Maintain the aspect ratio */
             object-fit: cover; /* Ensures the image covers the dimensions without distortion */
         }
         .img-button span {
@@ -86,47 +88,46 @@ footer .social a:hover {
             </nav>
             <!-- Projects Section-->
             <section class="py-5">
-                <div class="container px-5 mb-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Development of Welfare Radar System with Selected Service-Oriented Architecture-Based Assets</h2>
-                                            <p>Our capstone project, titled "Development of Welfare Radar System with Selected Service-Oriented Architecture-Based Assets,". This project involves creating a system designed to improve the efficiency and effectiveness of welfare services. By utilizing a service-oriented architecture, the system integrates various assets to provide a comprehensive and user-friendly solution for managing and delivering welfare services. This approach ensures that different components can communicate seamlessly, offering a robust framework for enhancing welfare service delivery.</p>
-                                        </div>
-                                                     <a href="https://youtu.be/iLIXWgwYE5k" class="img-button">
-                                            <img class="img-fluid" src="assets/port.PNG" alt="..." style="width: 2500px; height: 400px;" />
-                                               <span>Click to view the Video Demonstration of the Project</span>
-                                  </a>
-      
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Smart Giga Arena Registration Application</h2>
-                                            <p>The "Smart Giga Arena Registration Application" was a project developed during my internship at Dark League Studios. This application was designed to streamline the event registration process, providing a user-friendly experience for both customers and staff. By addressing issues such as internet connectivity, input errors, human errors, and empty inputs, the application significantly sped up the registration process and improved overall efficiency.</p>
-                                        </div>
-                                                 <a href="https://drive.google.com/file/d/1mLiip124zH_gco_a6rkXRHmSg3GkpUWH/view?usp=drive_link" class="img-button">
-                                        <img class="img-fluid" src="assets/smart.PNG" alt="..."  style="width: 2000px; height: 400px;"/>
-                                                       <span>Click to view the Video Demonstration of the Project</span>
-                                                 </a>
-                                    </div>
-                                </div>
-                            </div>
+               <div class="container px-5 mb-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+    </div>
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <!-- Project Card 1-->
+            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                <div class="card-body p-0">
+                    <div class="d-flex flex-column-reverse flex-md-row align-items-center">
+                        <div class="p-5 col-12 col-md-6">
+                            <h2 class="fw-bolder">Development of Welfare Radar System with Selected Service-Oriented Architecture-Based Assets</h2>
+                            <p>Our capstone project, titled "Development of Welfare Radar System with Selected Service-Oriented Architecture-Based Assets," involves creating a system designed to improve the efficiency and effectiveness of welfare services. By utilizing a service-oriented architecture, the system integrates various assets to provide a comprehensive and user-friendly solution for managing and delivering welfare services. This approach ensures that different components can communicate seamlessly, offering a robust framework for enhancing welfare service delivery.</p>
                         </div>
+                        <a href="https://youtu.be/iLIXWgwYE5k" class="img-button col-12 col-md-6">
+                            <img class="img-fluid" src="assets/port.PNG" alt="..." />
+                            <span>Click to view the Video Demonstration of the Project</span>
+                        </a>
                     </div>
                 </div>
+            </div>
+            <!-- Project Card 2-->
+            <div class="card overflow-hidden shadow rounded-4 border-0">
+                <div class="card-body p-0">
+                    <div class="d-flex flex-column-reverse flex-md-row align-items-center">
+                        <div class="p-5 col-12 col-md-6">
+                            <h2 class="fw-bolder">Smart Giga Arena Registration Application</h2>
+                            <p>The "Smart Giga Arena Registration Application" was a project developed during my internship at Dark League Studios. This application was designed to streamline the event registration process, providing a user-friendly experience for both customers and staff. By addressing issues such as internet connectivity, input errors, human errors, and empty inputs, the application significantly sped up the registration process and improved overall efficiency.</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1mLiip124zH_gco_a6rkXRHmSg3GkpUWH/view?usp=drive_link" class="img-button col-12 col-md-6">
+                            <img class="img-fluid" src="assets/smart.PNG" alt="..." />
+                            <span>Click to view the Video Demonstration of the Project</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
             </section>
             <!-- Call to action section-->
             <section class="py-5 bg-gradient-primary-to-secondary text-white">
