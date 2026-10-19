@@ -74,22 +74,111 @@
                 </div>
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <section>
-                            
-                            <div class="pdf-preview">
-                                <iframe
-                                    src="assets/Udemy-certificate.pdf#toolbar=0"
-                                    width="100%"
-                                    height="600px"
-                                    title="Certification Preview"
-                                ></iframe>
-                            </div>
-                            <div class="text-center mt-4">
-                                <a class="btn btn-primary px-4 py-3" href="assets/Udemy-certificate.pdf" download>
-                                    <i class="bi bi-download me-2"></i>Download Certification
-                                </a>
-                            </div>
-                        </section>
+                
+<section>
+    <!-- Certification Carousel -->
+    <div id="certificationCarousel" class="carousel slide"
+         data-bs-ride="false">
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button"
+                    data-bs-target="#certificationCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Certification 1"></button>
+
+            <button type="button"
+                    data-bs-target="#certificationCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Certification 2"></button>
+        </div>
+
+        <!-- Carousel Slides -->
+        <div class="carousel-inner">
+
+            <!-- Certification 1 -->
+            <div class="carousel-item active">
+                <div class="text-center mb-3">
+                    <h3 class="fw-bold">Udemy Certification</h3>
+                    <p class="text-muted">
+                        Certification 1 of 2
+                    </p>
+                </div>
+
+                <div class="pdf-preview">
+                    <iframe
+                        src="assets/Udemy-certificate.pdf#toolbar=0"
+                        width="100%"
+                        height="600"
+                        title="Udemy Certification Preview">
+                    </iframe>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a class="btn btn-primary px-4 py-3"
+                       href="assets/Udemy-certificate.pdf"
+                       download>
+                        <i class="bi bi-download me-2"></i>
+                        Download Certification
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="carousel-item">
+                <div class="text-center mb-3">
+                    <h3 class="fw-bold">Second Certification</h3>
+                    <p class="text-muted">
+                        Certification 2 of 2
+                    </p>
+                </div>
+
+                <div class="pdf-preview">
+                    <iframe
+                        src="assets/POSTMAN-CERT.pdf#toolbar=0"
+                        width="100%"
+                        height="600"
+                        title="Second Certification Preview">
+                    </iframe>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a class="btn btn-primary px-4 py-3"
+                       href="assets/Second-certificate.pdf"
+                       download>
+                        <i class="bi bi-download me-2"></i>
+                        Download Certification
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#certificationCarousel"
+                data-bs-slide="prev"
+                aria-label="Previous certification">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                  aria-hidden="true"></span>
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#certificationCarousel"
+                data-bs-slide="next"
+                aria-label="Next certification">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                  aria-hidden="true"></span>
+        </button>
+
+    </div>
+</section>
+
                     </div>
                 </div>
             </div>
