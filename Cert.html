@@ -45,6 +45,39 @@
             footer .social a:hover {
                 color: #00adb5;
             }
+
+            
+/* Certification carousel spacing fix */
+#certificationCarousel {
+    padding-bottom: 45px;
+}
+
+#certificationCarousel .carousel-control-prev,
+#certificationCarousel .carousel-control-next {
+    width: 7%;
+}
+
+#certificationCarousel .carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+#certificationCarousel .carousel-indicators button {
+    background-color: #393e46;
+}
+
+.pdf-preview iframe {
+    display: block;
+    border: 0;
+}
+
+@media (max-width: 576px) {
+    .pdf-preview iframe {
+        height: 450px;
+    }
+}
+
         </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
@@ -101,7 +134,7 @@
             <!-- Certification 1 -->
             <div class="carousel-item active">
                 <div class="text-center mb-3">
-                    <h3 class="fw-bold">Udemy Certification</h3>
+                    <h3 class="fw-bold">Manual QA Certification</h3>
                     <p class="text-muted">
                         Certification 1 of 2
                     </p>
@@ -129,7 +162,7 @@
             <!-- Certification 2 -->
             <div class="carousel-item">
                 <div class="text-center mb-3">
-                    <h3 class="fw-bold">Second Certification</h3>
+                    <h3 class="fw-bold">Postman Certification</h3>
                     <p class="text-muted">
                         Certification 2 of 2
                     </p>
